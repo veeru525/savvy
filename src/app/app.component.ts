@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mySchool';
+  slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
 }
