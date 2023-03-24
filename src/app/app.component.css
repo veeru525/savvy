@@ -1,17 +1,31 @@
-.data-card{
+.parent{
     width:100%;
-    height: 90%;
-    background-image: url("https://i.pinimg.com/736x/54/2f/84/542f845a61a848b662a3584d1c7fdd6e.jpg");
-    background-size: cover;
-    opacity: 90;
+    height:100%;
+   background-color:#ffff;
+}
+.child1{
+    max-width:100%;
+    height:10%;
+
+}
+.child2{
+    max-width:100%;
+    height:90%;
 }
 .menu{
     justify-content:space-between;
     
 }
 .nav-bar{
+    width: 100%;
+    height:10%;
     justify-content:space-between;
+    position:absolute;
+    border: 1px solid black;
     }
 span{
     padding-right: 1rem;
+}
+.content-view{
+    background-color: dimgrey;
 }

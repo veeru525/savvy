@@ -6,12 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-
+import { HttpClientModule } from '@angular/common/http';
 import { MaterialmoduleModule } from './modules/materialmodule/materialmodule.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialComponent } from './components/material/material.component';
 import { SchoolsComponent } from './components/schools/schools.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +27,8 @@ import { SchoolsComponent } from './components/schools/schools.component';
     MaterialmoduleModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    
     
   ],
   providers: [],

@@ -1,184 +1,63 @@
 <div class="home-view">
-  
-  <div>
-      <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-      <!-- 1stclass tab -->
-        <mat-tab label="1st class " class="tab" >
-          
-          <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-          <!-- Memorize tab-->
-            <mat-tab label="memorize">
-              <div>
-                <div class="demo-button-container">
-                  <button mat-raised-button (click)="addData()" class="demo-button">
-                    Add student
-                  </button>
-                  <button
-                      mat-raised-button
-                      [disabled]="!dataToDisplay.length"
-                      (click)="removeData()"
-                      class="demo-button">
-                    Remove student
-                  </button>
-                </div>
-                
-                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-                  <!-- Position Column -->
-                  <ng-container matColumnDef="position"  >
-                    <th mat-header-cell *matHeaderCellDef>No.</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.position}}</td>
-                  </ng-container>
-                
-                  <!-- Name Column -->
-                  <ng-container matColumnDef="name" >
-                    <th mat-header-cell *matHeaderCellDef>Student Name</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.name}}</td>
-                  </ng-container>
-                
-                  <!-- Weight Column -->
-                  <ng-container matColumnDef="class" >
-                    <th mat-header-cell *matHeaderCellDef>40 actionverbs</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true" >{{element.class}}</td>
-                  </ng-container>
-                
-                  <!-- Symbol Column -->
-                  <ng-container matColumnDef="rank" >
-                    <th mat-header-cell *matHeaderCellDef>40 irregularverbs</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.rank}}</td>
-                  </ng-container>
-                  
-                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
-                
-              </div>
-            </mat-tab>
-          <!-- Understand tab -->
-            <mat-tab label="understand">
-              <div>
-                <div class="demo-button-container">
-                  <button mat-raised-button (click)="addData()" class="demo-button">
-                    Add student
-                  </button>
-                  <button
-                      mat-raised-button
-                      [disabled]="!dataToDisplay.length"
-                      (click)="removeData()"
-                      class="demo-button">
-                    Remove student
-                  </button>
-                </div>
-                
-                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-                  <!-- Position Column -->
-                  <ng-container matColumnDef="position"  >
-                    <th mat-header-cell *matHeaderCellDef>No.</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.position}}</td>
-                  </ng-container>
-                
-                  <!-- Name Column -->
-                  <ng-container matColumnDef="name" >
-                    <th mat-header-cell *matHeaderCellDef>Name</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.name}}</td>
-                  </ng-container>
-                
-                  <!-- Class Column -->
-                  <ng-container matColumnDef="class" >
-                    <th mat-header-cell *matHeaderCellDef>class</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.class}}</td>
-                  </ng-container>
-                
-                  <!-- Symbol Column -->
-                  
-                  <ng-container matColumnDef="rank" >
-                    <th mat-header-cell *matHeaderCellDef>rank</th>
-                    <td mat-cell *matCellDef="let element" contenteditable="true">{{element.rank}}</td>
-                  </ng-container>
-
-                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
-                
-              </div>
-            </mat-tab>
-          <!-- Practice tab -->
-          <mat-tab label="understand">
-            <div>
-              <div class="demo-button-container">
-                <button mat-raised-button (click)="addData()" class="demo-button">
-                  Add student
-                </button>
-                <button
-                    mat-raised-button
-                    [disabled]="!dataToDisplay.length"
-                    (click)="removeData()"
-                    class="demo-button">
-                  Remove student
-                </button>
-              </div>
-              
-              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-                <!-- Position Column -->
-                <ng-container matColumnDef="position"  >
-                  <th mat-header-cell *matHeaderCellDef>No.</th>
-                  <td mat-cell *matCellDef="let element" contenteditable="true">{{element.position}}</td>
-                </ng-container>
-              
-                <!-- Name Column -->
-                <ng-container matColumnDef="name" >
-                  <th mat-header-cell *matHeaderCellDef>Name</th>
-                  <td mat-cell *matCellDef="let element" contenteditable="true">{{element.name}}</td>
-                </ng-container>
-              
-                <!-- Class Column -->
-                <ng-container matColumnDef="class" >
-                  <th mat-header-cell *matHeaderCellDef>class</th>
-                  <td mat-cell *matCellDef="let element" contenteditable="true">{{element.class}}</td>
-                </ng-container>
-              
-                <!-- Symbol Column -->
-                
-                <ng-container matColumnDef="rank" >
-                  <th mat-header-cell *matHeaderCellDef>rank</th>
-                  <td mat-cell *matCellDef="let element" contenteditable="true">{{element.rank}}</td>
-                </ng-container>
-
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-              </table>
-              
-            </div>
-          </mat-tab>
-          </mat-tab-group>
-          
-        </mat-tab>
-      <!-- 2nd class tab -->
-        <mat-tab label="2nd class">
-          <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-            <mat-tab label="First">
-              <ag-grid-angular 
-                style="width: 500px; height: 200px;" 
-              >
-              </ag-grid-angular>
-
-            </mat-tab>
-            <mat-tab label="Second">Content 2</mat-tab>
-            <mat-tab label="Third">Content 3</mat-tab>
-          </mat-tab-group>
-          
-        </mat-tab>
-      <!-- 3rd class -->
-        <mat-tab label="3rd class">
-          <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-            <mat-tab label="First">Content 1</mat-tab>
-            <mat-tab label="Second">Content 2</mat-tab>
-            <mat-tab label="Third">Content 3</mat-tab>
-          </mat-tab-group>
-          
-        </mat-tab>
-      </mat-tab-group>
+  <div class="main-heading">
+  <h1 >Learn to Speak</h1>
+  <h6>A simple and practical view of learning</h6>
   </div>
-
+  <div class="card">
+    <tr>
+    <td>I don't know</td>
+    <td>Person</td>
+    <td>I do Know</td><br>
+    </tr>
+    <tr>
+    <td><b>How to speak in English</b></td>
+    <td class="Learn"><b>Learning</b></td>
+    <td><b>How to speak in english</b></td>
+    </tr>
+  </div>
 </div>
-
-
+  <div class="training-view">
+    <h3>What We Do</h3>
+    <h1>OUR TRAINING</h1>
+    <mat-card class="card1">
+      <mat-card-content class="content-view">
+        <img  src="https://img.freepik.com/premium-vector/cartoon-happy-school-boy-raising-hands_29190-7042.jpg" width="80px" height="60px">
+        <div>
+        <h2>SCHOOL TRAINING</h2>
+        <p>Language Training Manners and Etiquette, Behaviour Skills, Presentation skills and so on</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card1">
+        <mat-card-content class="content-view">
+          <img  src="https://img.freepik.com/premium-vector/cartoon-happy-school-boy-raising-hands_29190-7042.jpg" width="80px" height="60px">
+        <div>
+          <h2>COLLEGE TRAINING</h2>
+          <p>Communication Skills,Soft skills,Interview Skills, Empolyablity Skills and so on</p>
+        </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="card1">
+          <mat-card-content class="content-view">
+            <img  src="https://img.freepik.com/premium-vector/cartoon-happy-school-boy-raising-hands_29190-7042.jpg" width="80px" height="60px">
+          <div>
+            <h2>TEACHERS & TRAINERS TRAINING</h2>
+            <p>Pedagogical Approches ,Faclitation Techquies, Experiantial Learning concepts and so on</p>
+          </div>
+          </mat-card-content>
+    </mat-card>
+    <mat-card class="card1">
+            <mat-card-content class="content-view">
+              <img  src="https://img.freepik.com/premium-vector/cartoon-happy-school-boy-raising-hands_29190-7042.jpg" width="80px" height="60px">
+            <div>
+              <h2>EMPLOYEES & CORPORATE TRAINING</h2>
+              <p>People Managemant, Teamworking,Critical Thinking, Leadership, Positive Thinking skills and so on </p>
+            </div>
+            </mat-card-content>
+    </mat-card>
+  </div>
+  <div>
+    <h3>gallary</h3>
+    
+  </div>
+       

@@ -11,6 +11,9 @@ import { AgGridModule } from 'ag-grid-angular';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [],
@@ -27,11 +30,13 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatGridListModule,
     MatButtonModule,
     MatDialogModule,
-    
+    MatSidenavModule,
+    MatCardModule,
   ],
   exports:[MatIconModule,
     MatToolbarModule,MatTabsModule,MatCheckboxModule,MatTableModule,MatFormFieldModule,
-    MatMenuModule,AgGridModule,MatGridListModule,MatButtonModule,MatDialogModule,]
+    MatMenuModule,AgGridModule,MatGridListModule,MatButtonModule,MatDialogModule,MatSidenavModule,
+    MatCardModule,]
   
 })
 export class MaterialmoduleModule { }

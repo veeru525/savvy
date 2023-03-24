@@ -1,18 +1,16 @@
-
-<div>
-    <mat-toolbar color="primary" class="nav-bar" >
-      <div>Savvy</div>
-      <div>
-        <span routerLink="home">home</span>
-        <span routerLink="schools">Schools</span>
+<div class="parent">
+  <div class="child1">
+    <mat-toolbar color="warn"  class="nav-bar">
+      <div routerLink="home">Savvy</div>
+      <div >
+        <span routerLink="home">Home</span>
+        <span routerLink="schools">services</span>
         <span routerLink="material">material</span>
         <span>contact us</span>
-
       </div>
-
     </mat-toolbar>
   </div>
-  <div class="data-card">
+  <div class="child2">
     <router-outlet></router-outlet>
-   
   </div>
+</div>
