@@ -11,13 +11,15 @@ import { MaterialmoduleModule } from './modules/materialmodule/materialmodule.mo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialComponent } from './components/material/material.component';
 import { SchoolsComponent } from './components/schools/schools.component';
+import { ServicesComponent } from './components/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     MaterialComponent,
-    SchoolsComponent
+    SchoolsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

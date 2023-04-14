@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
+import {MatTreeModule} from '@angular/material/tree';
 
 
 @NgModule({
@@ -32,11 +33,12 @@ import {MatCardModule} from '@angular/material/card';
     MatDialogModule,
     MatSidenavModule,
     MatCardModule,
+    MatTreeModule,
   ],
   exports:[MatIconModule,
     MatToolbarModule,MatTabsModule,MatCheckboxModule,MatTableModule,MatFormFieldModule,
     MatMenuModule,AgGridModule,MatGridListModule,MatButtonModule,MatDialogModule,MatSidenavModule,
-    MatCardModule,]
+    MatCardModule,MatTreeModule,]
   
 })
 export class MaterialmoduleModule { }
