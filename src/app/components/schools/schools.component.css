@@ -1,0 +1,38 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+table {
+  width: 80%;
+  margin-left: 200px;
+  margin-top: 30px;
+margin-bottom: 30px;}
+.bg-red {
+  background-color: red;
+}
+.student-class{
+  color: red;
+  font-weight: bold;
+  
+}
+.zero-students{
+  background-color: red;
+}
+th {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  margin-left: 300px;
+}
+form {
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.filter{
+  text-align: center;
+  margin-left: 200px;
+}

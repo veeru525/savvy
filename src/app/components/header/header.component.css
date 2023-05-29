@@ -1,0 +1,22 @@
+.container{
+    background-color: aliceblue;
+    padding:10px;
+    margin:0px;
+}
+.menu{
+    justify-content:space-between;
+    
+}
+.nav-bar{
+    background-color:darkcyan;
+    justify-content:space-between;
+    border: 1px solid black;
+    color: #ffffff;
+    font-weight: bold;
+    }
+span{
+    padding-right: 1rem;
+}
+.content-view{
+    background-color: dimgrey;
+}

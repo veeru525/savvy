@@ -25,6 +25,8 @@ span{
   margin:auto;
   padding: 10px;
   box-shadow: 5px 5px 5px gray;
+  background-color: deepskyblue;
+  color: #ffffff;
   
 }
 td{
