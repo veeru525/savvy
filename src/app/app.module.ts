@@ -11,13 +11,19 @@ import { MaterialmoduleModule } from './modules/materialmodule/materialmodule.mo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialComponent } from './components/material/material.component';
 import { SchoolsComponent } from './components/schools/schools.component';
+import { ServicesComponent } from './components/services/services.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     MaterialComponent,
-    SchoolsComponent
+    SchoolsComponent,
+    ServicesComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatSelectModule} from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -32,11 +35,13 @@ import {MatCardModule} from '@angular/material/card';
     MatDialogModule,
     MatSidenavModule,
     MatCardModule,
+    MatTreeModule,MatSelectModule,
+    MatIconModule,MatInputModule,
   ],
   exports:[MatIconModule,
     MatToolbarModule,MatTabsModule,MatCheckboxModule,MatTableModule,MatFormFieldModule,
     MatMenuModule,AgGridModule,MatGridListModule,MatButtonModule,MatDialogModule,MatSidenavModule,
-    MatCardModule,]
+    MatCardModule,MatTreeModule,MatSelectModule,MatIconModule,MatInputModule,]
   
 })
 export class MaterialmoduleModule { }

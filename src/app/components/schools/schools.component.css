@@ -1,62 +1,38 @@
-.tab {
-    width:100%;
-    height:100%;
-    padding: auto;
-    text-align: center;
-    
-
-  }
-  table {
-    width: 100%;
-    box-shadow: 5px 5px 3px gray;
-    border-radius: 5px;
-    text-align: center;
-    
-  }
-   th{
-    width:50px;
-    font-weight: bold;
-    font-size: 15px;
-    color:red;
-    background-color: aliceblue;
-
-  }
-  button {
-    margin-right: 8px;
-  }
-  .example-container {
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-  }
-  
-  .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: lavenderblush;
-  }
-  
-  .example-sidenav {
-    padding: 20px;
-  }
-  mat-grid-tile {
-    background:#ffffff;
-  }
-.card{
-  width: 230px;
-  height: 300px;
-  background-color:#ffffff;
-  box-shadow: -3px 3px 5px 5px lightgray;
-  text-align: center;
-  padding: auto;
-
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-h3{
-  text-align: center;
+table {
+  width: 80%;
+  margin-left: 200px;
+  margin-top: 30px;
+margin-bottom: 30px;}
+.bg-red {
+  background-color: red;
+}
+.student-class{
   color: red;
-  font-size: 30px;
   font-weight: bold;
-} 
- 
+  
+}
+.zero-students{
+  background-color: red;
+}
+th {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  margin-left: 300px;
+}
+form {
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.filter{
+  text-align: center;
+  margin-left: 200px;
+}
