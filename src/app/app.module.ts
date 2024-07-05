@@ -14,6 +14,7 @@ import { SchoolsComponent } from './components/schools/schools.component';
 import { ServicesComponent } from './components/services/services.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LocationComponent } from './components/location/location.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SchoolsComponent,
     ServicesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
